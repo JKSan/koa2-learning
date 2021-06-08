@@ -1,12 +1,12 @@
 const Router = require('koa-router')
 const error_page = require('./error-page')
-const home = require('./home')
+const auth = require('./auth')
 
 const router = new Router()
 
-router.use('/home', home.routes(), home.allowedMethods())
+router.use('/auth', auth.routes(), auth.allowedMethods())
 router.use(error_page.routes(), error_page.allowedMethods())
 
-router.redirect('/', '/home')
+router.redirect('/', '/auth')
 
 module.exports = router
