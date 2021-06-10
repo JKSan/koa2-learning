@@ -10,13 +10,18 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@alicloud/pop-core": "^1.7.10",
+    "ali-oss": "^6.15.2",
     "dayjs": "^1.10.5",
     "jsonwebtoken": "^8.5.1",
     "koa-bodyparser": "^4.3.0",
+    "koa-jsonp": "^2.0.2",
+    "koa-jwt": "^4.0.1",
     "koa-router": "^10.0.0",
     "koa-static": "^5.0.0",
     "koa2": "^2.0.0-alpha.7",
     "koa2-cors": "^2.0.6",
+    "log4js": "^6.3.0",
     "md5": "^2.3.0",
     "mysql2": "^2.2.5",
     "sequelize": "^6.6.2"
