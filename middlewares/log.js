@@ -1,11 +1,12 @@
 const log4js = require('log4js')
+const dayjs = require('dayjs')
 const env = process.env.NODE_ENV
 
 log4js.configure({
   appenders: {
     everything: {
       type: 'file',
-      filename: 'logs/app.log',
+      filename: `logs/${dayjs(new Date()).format('YYYY-MM-DD')}.log`,
       maxLogSize: 10485760,
       backups: 3,
       compress: true
